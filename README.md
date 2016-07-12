@@ -14,4 +14,3 @@
 5. On Jenkins server define a job that will build on build node a project https://github.com/antweiss/courseProject.git
 6. On webserver write python script that copies WAR file of above build to a local tomcat folder /var/lib/tomcat/webapps
 7. On Jenkins server define additional two jobs while first one (execute the script) will trigger the second one (restart tomcat)
-8. 
