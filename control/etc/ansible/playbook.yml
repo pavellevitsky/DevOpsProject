@@ -1,0 +1,22 @@
+---
+
+- hosts: jenkins, build, webserver
+
+  tasks:
+
+  - name: start ntpd service
+    service: name=ntpd state=started
+
+- hosts: jenkins
+
+  tasks:
+
+  - name: start jenkins
+    service: name=jenkins state=started
+
+- hosts: webserver
+
+  tasks:
+
+  - name: start tomcat
+    service: name=tomcat state=started
