@@ -16,7 +16,7 @@ node 'build-node' {
 
   include java
 
-#  include maven
+  include maven
 
 }
 
